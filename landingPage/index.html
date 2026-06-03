@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Wire Chord Studio is a free browser-based MIDI jam room for musicians who want to play together online."
+    />
+    <title>Wire Chord Studio - Free MIDI jam rooms</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="mesh" aria-hidden="true"></div>
+      <div class="grid" aria-hidden="true"></div>
+      <div class="glow glow-primary" aria-hidden="true"></div>
+      <div class="glow glow-secondary" aria-hidden="true"></div>
+      <div class="notes" aria-hidden="true">
+        <span>MIDI</span>
+        <span>LIVE</span>
+        <span>JAM</span>
+        <span>SYNC</span>
+        <span>PLAY</span>
+        <span>ROOM</span>
+      </div>
+
+      <header class="site-header">
+        <a class="brand" href="#" aria-label="Wire Chord Studio home">
+          <span class="brand-mark">
+            <img src="./logo.svg" alt="" width="32" height="32" />
+          </span>
+          <span>
+            <strong>Wire Chord Studio</strong>
+            <small>Global MIDI jamming</small>
+          </span>
+        </a>
+        <a class="header-link" href="#join">Join the free beta</a>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow">Free browser rooms for musicians</p>
+            <h1 id="hero-title">
+              <span class="free-pill">Free</span>
+              MIDI jam rooms for friends.
+            </h1>
+            <p class="hero-lead">
+              Wire Chord Studio turns any modern browser into a shared rehearsal room. No payment,
+              no credit card, no install - just plug in a controller, invite a friend, and play.
+            </p>
+
+            <div class="free-proof" aria-label="Free access details">
+              <strong>$0 to start</strong>
+              <span>No card required</span>
+              <span>No subscriptions while we build the beta</span>
+            </div>
+
+            <form class="signup-card" id="interest-form" novalidate>
+              <label for="email">Get invited when the free beta opens</label>
+              <div class="email-row">
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="you@example.com"
+                  required
+                />
+                <button type="submit">Join free</button>
+              </div>
+              <p class="form-note" id="form-message" role="status" aria-live="polite">
+                No spam and no payment wall. Just product updates and beta invites.
+              </p>
+            </form>
+
+            <div class="trust-row" aria-label="Key benefits">
+              <span>Free early access</span>
+              <span>100% browser based</span>
+              <span>No install</span>
+              <span>No credit card</span>
+            </div>
+          </div>
+
+          <aside class="studio-card" aria-label="Wire Chord room preview">
+            <div class="card-topline">
+              <span class="live-dot"></span>
+              <span>Free room: violet-808</span>
+            </div>
+            <div class="wave-panel">
+              <span style="--height: 38%"></span>
+              <span style="--height: 72%"></span>
+              <span style="--height: 45%"></span>
+              <span style="--height: 88%"></span>
+              <span style="--height: 54%"></span>
+              <span style="--height: 74%"></span>
+              <span style="--height: 41%"></span>
+              <span style="--height: 64%"></span>
+              <span style="--height: 94%"></span>
+              <span style="--height: 50%"></span>
+            </div>
+            <div class="player-list">
+              <article>
+                <span class="avatar avatar-one">AK</span>
+                <div>
+                  <strong>Ari</strong>
+                  <small>Drum pads connected</small>
+                </div>
+              </article>
+              <article>
+                <span class="avatar avatar-two">VL</span>
+                <div>
+                  <strong>Vlad</strong>
+                  <small>Synth keys online</small>
+                </div>
+              </article>
+              <article>
+                <span class="avatar avatar-three">MJ</span>
+                <div>
+                  <strong>Maya</strong>
+                  <small>Bass controller ready</small>
+                </div>
+              </article>
+            </div>
+          </aside>
+        </section>
+
+        <section class="feature-grid" aria-label="Wire Chord features">
+          <article>
+            <span class="feature-icon">01</span>
+            <h2>Free to try</h2>
+            <p>Join the beta list without paying, adding a card, or committing to a subscription.</p>
+          </article>
+          <article>
+            <span class="feature-icon">02</span>
+            <h2>MIDI first</h2>
+            <p>Designed around live MIDI flow, instrument selection, peer volume, and fast feedback.</p>
+          </article>
+          <article>
+            <span class="feature-icon">03</span>
+            <h2>Made for groups</h2>
+            <p>Invite friends freely, test remote sessions, and see if browser jamming fits your flow.</p>
+          </article>
+        </section>
+
+        <section class="closing-card" id="join">
+          <div>
+            <p class="eyebrow">Free beta coming soon</p>
+            <h2>Reserve your spot before the first rooms open.</h2>
+          </div>
+          <a class="cta-link" href="#email">Join free</a>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
